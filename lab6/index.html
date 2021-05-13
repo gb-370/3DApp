@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+    <head>    
+        <!-- Required meta tags -->    
+        <meta charset="utf-8">    
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+        
+        <!-- X3dom --> 
+        <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
+        <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'/>   
+        <!-- 
+        <link rel='stylesheet' type='text/css' href='css/x3dom.css'>    
+        Include the x3dom JavaScript   
+        <script type='text/javascript' src='scripts/js/x3dom.js'></script>
+        -->
+        <!-- Bootstrap CSS -->    
+        <link rel="stylesheet" href="css/bootstrap.min.css">  
+        <link rel="stylesheet" href="css/custom.css"> 
+        <link rel="stylesheet" href="css/all.css"> 
+        
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        
+        <script src="https://kit.fontawesome.com/6ac3910c4e.js" crossorigin="anonymous"></script>
+
+        <title>Hello, world!</title>  
+    </head>  
+    <body id="body">  
+
+        <!-- Logo and navigation bar -->
+        <nav id="header" class="navbar navbar-expand-sm navbar_coca_cola sticky-top"><div class= "container">
+            <!-- Brand -->
+            <div class="logo">
+                <a class="navbar-brand" href="javascript:swap('home')">
+                    <h1>1</h1>
+                    <h1>oca</h1>
+                    <h2>Cola</h2>
+                    <h3>Journey</h3>
+                    <p>Refreshing the world, one story at a time</p>
+                </a>
+            </div>
+            
+            <!-- Collapsible Navigation bar Menu Icon -->
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse ">      
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Link Menu Item button to the links class Navbar-collapse selector -->
+            <div class="collapse navbar-collapse">
+                <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a id="navAbout" class="nav-link" href="#" 
+                    data-toggle="popover" data-trigger="hover" 
+                    data-placement="bottom" title="" 
+                    data-content="3D Apps is a final year and postgraduate 
+                    module ..." 
+                    data-original-title="About Web 3D Applications">
+                        About
+                    </a>
+                </li>
+
+            
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a id="navModels" class="nav-link" href="#" 
+                    data-toggle="popover" data-trigger="hover" 
+                    data-placement="bottom" title="" 
+                    data-content="There are three X3D models: Coke, Sprite 
+                    and Pepper" data-original-title="X3D Models">Models</a>
+                </li>
+                </ul>
+            </div>
+        </div></nav>
+
+        <!-- Main body -->
+        <div id="home" class="container main_contents">
+            <div class="row"> <!-- Main 3D Image or Carousel-->
+                <div class="col-sm-12">
+                    <div id="main_3d_image">
+                        <div id="main_text" class="col-xs-12 col-sm-4">
+                            <div id="title_home"></div>
+                            <div id="subtitle_home"></div>
+                            <div id="description_home"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br> <!-- Temporary break -->
+            <!-- Row of cards on the grid -->
+            <div class="row">
+                <!-- Coca Cola column -->
+                <div class="col-sm-4">
+                    <div class="card">
+                        <a href="assets/images/render_images/coke.png" data-fancybox data-caption="My 3D Coke can render" class="thumbnail">
+                            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/site_images/coca_cola.jpg" alt="Coca Cola">
+                        </a>
+                        <div class="card-body">
+                            <div id="title_left"></div>
+                            <div id="subtitle_left"></div>
+                            <div id="description_left"></div>
+                            <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola" class="btn btn-primary"> Find out more...</a>
+                        </div>
+                    </div>  
+                </div>
+
+                <!-- Sprite Column -->
+                <div class="col-sm-4">
+                    <div class="card">
+                        <a href="assets/images/render_images/sprite.png" data-fancybox data-caption="My 3D Sprite bottle render" class="thumbnail">
+                            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/site_images/sprite.jpg" alt="Sprite">
+                        </a>
+                        <div class="card-body">
+                            <div id="title_centre"></div>
+                            <div id="subtitle_centre"></div>
+                            <div id="description_centre"></div>
+                            <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite" class="btn btn-primary"> Find out more...</a>
+                        </div>
+                    </div>  
+                </div>
+
+                <!-- Dr Pepper -->
+                <div class="col-sm-4">
+                    <div class="card">
+                        <a href="assets/images/render_images/pepper.jpg" data-fancybox data-caption="My 3D Dr Pepper cup render" class="thumbnail">
+                            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/site_images/dr_pepper.jpg" alt="Dr Pepper">
+                        </a>
+                        <div class="card-body">
+                            <div id="title_right"></div>
+                            <div id="subtitle_right"></div>
+                            <div id="description_right"></div>
+                            <a href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper" class="btn btn-primary"> Find out more...</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <div id="about">Insert about contents</div>
+
+        <div id="models" class="main_contents container-fluid">
+            <!-- X3D Model and Gallery-->
+            <div class="row">
+                <!-- X3D Model -->
+                <div class="col-sm-8">
+                    <div class="card text-left">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-item">
+                                    <a id="navCoke" class="nav-link active" href="#">Coke</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="navSprite" class="nav-link" href="#">Sprite</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="navPepper" class="nav-link" href="#">DrPepper</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        View
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Front</a>
+                                        <a class="dropdown-item" href="#">Back</a>
+                                        <a class="dropdown-item" href="#">Side</a>
+                                        <a class="dropdown-item" href="#">Bottom</a>
+                                        <a class="dropdown-item" href="#">Top</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <!-- Coke -->
+                            <div id="coke">
+                                <div id="x3dModelTitle_coke" class="card-title drinksText"></div>
+                                <div class="model3D">
+                                    <x3d>
+                                        <scene>
+                                            <Inline nameSpaceName="model" mapDEFToID="true" onclick='animateModel();' url="assets/X3D/Coke.x3d"/>
+                                        </scene>
+                                    </x3d>
+                                </div>
+                                <div id="x3dCreationMethod_coke" class="card-text drinksText"></div>
+                            </div>
+
+                            <!-- Sprite -->
+                            <div id="sprite">
+                                <div id="x3dModelTitle_sprite" class="card-title drinksText"></div>
+                                <div class="model3D">
+                                    <x3d>
+                                        <scene>
+                                            <Inline nameSpaceName="model" mapDEFToID="true" onclick='animateModel();' url="assets/X3D/Sprite.x3d"/>
+                                        </scene>
+                                    </x3d>
+                                </div>
+                                <div id="x3dCreationMethod_sprite" class="card-text drinksText"></div>
+                            </div>
+
+                            <!-- DrPepper -->
+                            <div id="pepper">
+                                <div id="x3dModelTitle_pepper" class="card-title drinksText"></div>
+                                <div class="model3D">
+                                    <x3d>
+                                        <scene>
+                                            <Inline nameSpaceName="model" mapDEFToID="true" onclick='animateModel();' url="assets/X3D/DrPepper.x3d"/>
+                                        </scene>
+                                    </x3d>
+                                </div>
+                                <div id="x3dCreationMethod_pepper" class="card-text drinksText"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery -->
+                <div class="col-sm-4">
+                    <div class="card text-left">
+                        <div class="card-header gallery-header">
+                            Gallery
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title title_gallery drinksText"></div>
+                            <div class="gallery" id="gallery1"></div>
+                            <div class="card-text description_gallery drinksText"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>                     
+        </div>
+
+        <div id="interaction" class="row container-fluid main_contents">
+            <!-- Column for the camera view controls -->
+            <div class="col-sm-4">
+                <div class="card text-left">
+                    <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                    <!-- Dropdown nav-tab -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" aria-expanded="false">Cameras</a>
+                        <div class="dropdown-menu" style="display: none;">
+                            <a class="dropdown-item" href="#" onclick="cameraFront();">Front</a>
+                            <a class="dropdown-item" href="#" onclick="cameraBack();">Back</a>
+                            <a class="dropdown-item" href="#" onclick="cameraLeft();">Left</a>
+                            <a class="dropdown-item" href="#" onclick="cameraRight();">Right</a>
+                            <a class="dropdown-item" href="#" onclick="cameraTop();">Top</a>
+                            <a class="dropdown-item" href="#" onclick="cameraBottom();">Bottom</a>
+                        </div>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-Title x3dCamera_Subtitle drinksText">
+                        <h3>Camera Views</h3>
+                    </div>                            
+                    <a href="#" class="btn btn-success btn-responsive" onclick="cameraFront();">Default</a>
+                    <a href="#" class="btn btn-primary btn-responsive" onclick="cameraBack();">Back</a>
+                    <a href="#" class="btn btn-secondary btn-responsive" onclick="cameraLeft();">Left</a>
+                    <a href="#" class="btn btn-secondary btn-responsive" onclick="cameraRight();">Right</a>
+                    <a href="#" class="btn btn-outline-dark disabled btn-responsive">Off</a>
+                    <div class="card-text x3dCameraDescription drinksText">
+                        <p>These buttons select a limited range of X3D model viewpoints, use the dropdown menu for more camera views</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column for the animation controls -->
+            <div class="col-sm-4">
+                <div class="card text-left">
+                    <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                        <a class="nav-link active" href="#">Animation</a>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-Title x3dAnimationSubtitle drinksText">
+                        <h3>Animation Options</h3>
+                    </div>
+                    <a href="#" class="btn btn-outline-light btn-responsive" onclick="spin();">RotX</a>
+                    <a href="#" class="btn btn-outline-light btn-responsive">RotY</a>
+                    <a href="#" class="btn btn-outline-light btn-responsive">RotZ</a>
+                    <a href="#" class="btn btn-outline-dark btn-responsive" onclick="stopRotation();">Stop</a>
+                    <div class="card-text x3dAnimationDescription drinksText">
+                        <p>These buttons select a range of X3D animation options</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column for the render type and lighting controls -->
+            <div class="col-sm-4">
+                <div class="card text-left">
+                    <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" aria-expanded="false">Render</a>
+                        <div class="dropdown-menu" style="display: none;">
+                            <a class="dropdown-item" href="#">Polygon</a>
+                            <a class="dropdown-item" href="#" onclick="wireframe();">Wireframe</a>
+                            <a class="dropdown-item" href="#">Vertex</a>
+                        </div>
+                        </li>
+                    <!-- Dropdown nav-tab -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" aria-expanded="false">Lights</a>
+                        <div class="dropdown-menu" style="display: none;">
+                            <a class="dropdown-item" href="#">Default</a>
+                            <a class="dropdown-item" href="#">Onmi On/Off</a>
+                            <a class="dropdown-item" href="#">Target On/Off</a>
+                            <a class="dropdown-item" href="#">Headlight On/Off</a>
+                        </div>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-Title x3dRendersubtitle drinksText">
+                        <h3>Render and Lighting Options</h3>
+                    </div>
+                    <a href="#" class="btn btn-success btn-responsive">Poly</a>
+                    <a href="#" class="btn btn-secondary btn-responsive" onclick="wireframe();">Wire</a>
+                    <a href="#" class="btn btn-success btn-responsive" onclick="headlight();">Headlight</a>
+                    <a href="#" class="btn btn-outline-dark btn-responsive">Default</a>
+                    <div class="card-text x3dRenderDescription drinksText">
+                        <p>These buttons select a limited number of render and lighting options; use the dropdown menus for more options</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Coke page block element -->
+        <div id="cokeDescription" class="container-fluid main_contents" style="display : none;">     
+             <!-- Row to hold 1 card to hold the coca cola descriptive text, etc.. -->
+             <div class="row">
+                 <!-- Coca Cola column -->
+                 <div class="col-sm-12">
+                     <div class="card">
+                         <div class="card-body">
+                            <div id="title_coke" class="card-title drinksText"></div>
+                            <div id="subtitle_coke" class="card-subtitle drinksText"></div>
+                            <div id="description_coke" class="card-text drinksText"></div>
+                             <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola" class="btn btn-primary"> Find out more...</a>
+                         </div>
+                     </div>  
+                 </div>
+             </div>
+        </div>
+
+        <!-- Sprite page block element -->
+        <div id="spriteDescription" class="container-fluid main_contents" style="display : none;">
+             <!-- Row to hold 1 card to hold the coca cola descriptive text, etc.. -->
+             <div class="row">
+                 <!-- Coca Cola column -->
+                 <div class="col-sm-12">
+                     <div class="card">
+                         <div class="card-body">
+                            <div id="title_sprite" class="card-title drinksText"></div>
+                            <div id="subtitle_sprite" class="card-subtitle drinksText"></div>
+                            <div id="description_sprite" class="card-text drinksText"></div>
+                             <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite" class="btn btn-primary"> Find out more...</a>
+                         </div>
+                     </div>  
+                 </div>
+             </div>
+        </div>
+
+        <!-- DrPepper page block element -->
+        <div id="pepperDescription" class="container-fluid main_contents" style="display : none;">
+           <!-- Row to hold 1 card to hold the coca cola descriptive text, etc.. -->
+             <div class="row">
+                 <!-- Coca Cola column -->
+                 <div class="col-sm-12">
+                     <div class="card">
+                        <div class="card-body">
+                            <div id="title_pepper" class="card-title drinksText"></div>
+                            <div id="subtitle_pepper" class="card-subtitle drinksText"></div>
+                            <div id="description_pepper" class="card-text drinksText"></div>
+                             <a href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper" class="btn btn-primary"> Find out more...</a>
+                         </div>
+                     </div>  
+                 </div>
+             </div>
+        </div>
+
+        <br> <!-- Temporary break until we style the template -->
+        <!-- Your 3D App footer -->
+        <nav id="footer" class="navbar navbar-expand-xs footer"><div class="container">
+            <div class="container-fluid">
+                <div class="navbar-text float-left copyright">
+                    <p><span class="align-baseline"></span>&copy 2019 Mobile Web 3D Applications |</span>
+                        <a href="javascript:changeLook();">Restyle</a> |
+                        <a href="javascript:changeBack();">Reset</a>
+                    </p>
+                </div>
+                <div class="navbar-text float-right social">
+                    <a href="#"><i class="fab fa-facebook-square fa-2x" style="font-size:20px;color: red;"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x" style="font-size:20px;color: green;"></i></a>
+                    <a href="#"><i class="fab fa-google-plus fa-2x" style="font-size:20px;color: blue;"></i></a>
+                    <a href="#"><i class="fab fa-github-square fa-2x" style="font-size:20px;color: yellow;"></i></a>
+                </div>
+            </div>
+        </div></nav>
+
+        <!-- Optional JavaScript -->    
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->    
+        <script src="scripts/js/jquery.min.js"></script>    
+        <script src="scripts/js/popper.min.js"></script>    
+        <script src="scripts/js/bootstrap.min.js"></script>
+        <script src="scripts/js/gallery_generator.js"></script>
+        
+        <script src="scripts/js/swap_restyle.js"></script>
+        <script src="scripts/js/getJsonData.js"></script>
+        <script src="scripts/js/modelInteraction.js"></script>
+    </body>
+</html>
