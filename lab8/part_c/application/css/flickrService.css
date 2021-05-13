@@ -1,0 +1,9 @@
+h1 {color:red; 
+    margin-left: 5px;}
+h2 {color:blue; 
+    margin: 5px;}
+p {color:green; margin-top: -10px; margin-left: 0px;}
+img {padding: 0.25rem; margin-top: 5px; margin-bottom: 5px; margin-right: 5px; border: 1px solid red; border-radius: 0.25rem; float: left; width: 20%;}
+.box {border: 2px solid green; padding: 5px; float: left; margin-top: 20px; margin-left: 5px; margin-right: 5x; margin-bottom: 5px; padding: 20px; width: 90%; height: auto;}
+.textInput{margin: 5px; float: left;}
+.btn{margin: 5px; float: left;}
